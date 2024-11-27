@@ -149,12 +149,16 @@ def investment_simulation():
         purchase_date = pd.to_datetime(purchase_date)
         filtered_df = df[df['Date'] >= purchase_date]
 
-        filtered_df['Investment Value'] = quantity * filtered_df['Cumulative Returns']
+        # Normalizar a rentabilidade acumulada
+        initial_cumulative_return = filtered_df['Cumulative Returns'].iloc[0]
+        filtered_df['Cumulative Returns'] = filtered_df['Cumulative Returns'] / initial_cumulative_return
+
+        filtered_df['Valor Investido'] = quantity * filtered_df['Cumulative Returns'] * purchase_price
 
         fig = px.line(
             filtered_df, 
             x='Date', 
-            y='Investment Value', 
+            y='Valor Investido', 
             title=f"Evolução do Investimento a partir de {purchase_date.date()}"
         )
 
