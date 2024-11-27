@@ -4,3 +4,4 @@ plotly
 dash
 streamlit
 scipy
+scikit-learn
