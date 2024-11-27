@@ -14,7 +14,7 @@ from scipy.stats import ttest_ind
 
 
 # Carregamento e preparação dos dados
-df = pd.read_csv('/home/roratto/study/facul/tesla-stock-analysis/Dataset/TSLA.csv')
+df = pd.read_csv('Dataset/TSLA.csv')
 df = df.dropna()
 df['Date'] = pd.to_datetime(df['Date'])
 df['Year'] = df['Date'].dt.year
