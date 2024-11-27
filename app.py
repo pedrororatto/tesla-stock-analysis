@@ -237,4 +237,5 @@ def simulate_investment(n_clicks, quantity, purchase_date):
     return fig, result_text
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, use_reloader=False)
+
