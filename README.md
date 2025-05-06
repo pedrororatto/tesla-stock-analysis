@@ -1,44 +1,44 @@
-# Tesla Stock Analysis
+#   Tesla Stock Analysis
 
-Este projeto consiste em uma aplicação interativa desenvolvida em Python para análise de dados históricos das ações da Tesla. O objetivo principal é oferecer insights financeiros por meio de estatísticas descritivas, testes estatísticos e visualizações gráficas, além de simular a evolução de um investimento baseado em uma data de compra selecionada pelo usuário.
+This project is an interactive application developed in Python for analyzing historical Tesla stock data. The main objective is to provide financial insights through descriptive statistics, statistical tests, and graphical visualizations, as well as to simulate the evolution of an investment based on a user-selected purchase date.
 
-## 🎯 Funcionalidades
+##   🎯 Features
 
-- **Estatísticas Descritivas**:
-  - Média, Mediana, Moda, Variância, Desvio Padrão e Desvio Médio Absoluto dos preços de fechamento.
-  - Histograma interativo dos preços.
+-   **Descriptive Statistics**:
+    -   Mean, Median, Mode, Variance, Standard Deviation, and Mean Absolute Deviation of closing prices.
+    -   Interactive histogram of prices.
 
-- **Teste T de Student**:
-  - Comparação da média dos preços de fechamento com um valor hipotético para determinar significância estatística.
+-   **Student's t-test**:
+    -   Comparison of the average closing prices with a hypothetical value to determine statistical significance.
 
-- **Previsão com Regressão Linear**:
-  - Modelo de regressão linear para prever os preços futuros das ações.
+-   **Prediction with Linear Regression**:
+    -   Linear regression model to predict future stock prices.
 
-- **Evolução do Investimento**:
-  - Simulação da evolução de um investimento a partir de uma data de compra, considerando rentabilidade acumulada ao longo do tempo.
+-   **Investment Evolution**:
+    -   Simulation of investment growth from a purchase date, considering accumulated returns over time.
 
-- **Volume total de vendar por ano e mensal**:
-  - Exemplo gráfico de como foram as vendas ao longo do ano e por mês.
+-   **Total sales volume per year and month**:
+    -   Example graph of sales over the year and per month.
 
-- **Indicadores de compra e venda**:
-  - Com base nos dados históricos, indica quando foi bom ter comprado e quando foi melhor ter vendido.
+-   **Buy and sell indicators**:
+    -   Based on historical data, indicates when it was good to buy and when it was better to sell.
 
-- **Correlação entre preço e volume**
-  - Gráfico de correlação entre essas duas variáveis. 
+-   **Correlation between price and volume**
+    -   Correlation graph between these two variables.
 
-## 🛠️ Tecnologias Utilizadas
+##   🛠️ Technologies Used
 
-- **Linguagem de Programação**: Python
-- **Bibliotecas Principais**:
-  - [Streamlit](https://streamlit.io/): Para criação de dashboards interativos.
-  - [Pandas](https://pandas.pydata.org/): Manipulação e análise de dados.
-  - [Plotly](https://plotly.com/): Criação de gráficos interativos.
-  - [NumPy](https://numpy.org/): Cálculos matemáticos e estatísticos.
-  - [Scikit-learn](https://scikit-learn.org/): Modelagem preditiva com regressão linear.
+-   **Programming Language**: Python
+-   **Main Libraries**:
+    -   [Streamlit](https://streamlit.io/): For creating interactive dashboards.
+    -   [Pandas](https://pandas.pydata.org/): Data manipulation and analysis.
+    -   [Plotly](https://plotly.com/): Creation of interactive charts.
+    -   [NumPy](https://numpy.org/): Mathematical and statistical calculations.
+    -   [Scikit-learn](https://scikit-learn.org/): Predictive modeling with linear regression.
 
-## ⚙️ Estrutura do Projeto
+##   ⚙️ Project Structure
 
-- **app.py**: Código principal da aplicação, incluindo processamento de dados, cálculos estatísticos e geração de gráficos.
-- **Dataset/**: Diretório contendo os dados históricos das ações da Tesla (CSV).
-- **README.md**: Este arquivo explicando o projeto.
-- **requirements.txt**: Este arquivo consiste nas dependências do projeto.
+-   **app.py**: Main application code, including data processing, statistical calculations, and chart generation.
+-   **Dataset/**: Directory containing historical Tesla stock data (CSV).
+-   **README.md**: This file explaining the project.
+-   **requirements.txt**: This file consists of the project dependencies.
